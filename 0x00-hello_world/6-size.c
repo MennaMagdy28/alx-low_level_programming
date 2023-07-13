@@ -1,5 +1,5 @@
 #include <stdio.h>
-11;rgb:0000/0000/0000/**
+/**
 *main-start
 * c size
 * Return: Always 0 (success)
