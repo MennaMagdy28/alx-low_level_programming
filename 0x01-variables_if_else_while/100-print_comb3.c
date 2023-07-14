@@ -5,7 +5,8 @@
 *Description: wirte numbers with putchar
 *Return:Always 0 (success)
 */
-int main(void) {
+int main(void)
+{
 int i, j;
 for (i = 0; i < 9; i++)
 {
@@ -21,5 +22,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return 0;
+return (0);
 }
