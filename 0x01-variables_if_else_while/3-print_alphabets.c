@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
 *main - started
 *Description: print alphabets with putchar (capital also)
@@ -11,5 +12,6 @@ for (a = 97; a <= 122; a++)
 putchar(a);
 for (a = 65; a <= 90; a++)
 putchar(a);
+putchar('\n');
 return (0);
 }
