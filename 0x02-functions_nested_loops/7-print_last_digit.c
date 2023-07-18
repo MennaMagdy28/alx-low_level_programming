@@ -10,7 +10,7 @@ int digit;
 if (num > 0)
 digit = num % 10;
 else
-digit = (num * -1) % 10;
+digit = -(num % 10);
 _putchar(digit + '0');
 return (digit);
 }
