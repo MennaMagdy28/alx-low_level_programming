@@ -41,7 +41,7 @@ sumo = flo + flo2 + (a + b) / mx;
 a = b;
 b = c;
 flo = flo2;
-flo2 = sumo
+flo2 = sumo;
 if (count != 98)
 printf(", ");
 else
