@@ -5,35 +5,30 @@
 */
 void print_times_table(int n)
 {
-int i, sum, j;
-if (n >= 0 && n <= 15)
+int p, m, x;
+if (n <= 15 &&  n >= 0)
 {
-for (i = 0; i <= n; i++)
+for (x = 0; x <= n; x++)
 {
-sum = 0;
-j = 0;
-while (j < n)
+printf("0");
+for (m = 1; m <= n; m++)
 {
-if (sum < 10)
+_putchar(',');
+_putchar(' ');
+p = x * m;
+if (p <= 9)
+_putchar(' ');
+if (p <= 99)
+_putchar(' ');
+if (p >= 100)
 {
-printf("%d,   ", sum);
-sum = sum + i;
-j++;
+_putchar((p / 100) + 48);
+_putchar((p / 10) % 10 + 48);
 }
-else if (sum >= 10 && sum < 100)
-{
-printf("%d,  ", sum);
-sum = sum + i;
-j++;
+else if (p <= 99 && p >= 10)
+_putchar((p / 10) + 48);
+_putchar ((p % 10) + 48);
 }
-else
-{
-printf("%d, ", sum);
-sum = sum + i;
-j++;
-}
-}
-printf("%d\n", i * n);
-}
+_putchar('\n');
 }
 }
