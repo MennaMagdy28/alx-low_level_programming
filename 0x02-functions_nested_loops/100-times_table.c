@@ -18,7 +18,7 @@ if (sum < 10)
 {
 printf("%d,   ", sum);
 sum = sum + i;
-j++;     
+j++;
 }
 else if (sum >= 10 && sum < 100)
 {
