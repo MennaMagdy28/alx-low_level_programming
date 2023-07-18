@@ -12,7 +12,7 @@ for (i = 0; i <= n; i++)
 {
 sum = 0;
 j = 0;
-while (j <= n)
+while (j < n)
 {
 printf("%d, ", sum);
 sum = sum + i;
