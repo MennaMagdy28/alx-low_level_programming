@@ -14,7 +14,7 @@ sum = 0;
 j = 0;
 while (j < n)
 {
-printf("%d, ", sum);
+printf("%d,   ", sum);
 sum = sum + i;
 j++;
 }
