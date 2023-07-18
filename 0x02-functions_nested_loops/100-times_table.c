@@ -5,15 +5,16 @@
 */
 void print_times_table(int n)
 {
-  int i, sum, j;
-for (i = 0; i <= n; i++)
+int i, sum, j;
+for (i = 0; i < n; i++)
 {
 sum = 0;
-for (j = 0; j < n; j++)
-{
-sum = sum + i;
+ j = 0;
+do
 printf("%d, ", sum);
-}
+sum = sum + i;
+j++
+while(j < n)
 printf("%d\n", i * n);
 }
 }
