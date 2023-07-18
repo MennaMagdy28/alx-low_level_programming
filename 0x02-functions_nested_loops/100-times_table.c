@@ -10,7 +10,7 @@ if (n <= 15 &&  n >= 0)
 {
 for (x = 0; x <= n; x++)
 {
-printf("0");
+_putchar(48);
 for (m = 1; m <= n; m++)
 {
 _putchar(',');
