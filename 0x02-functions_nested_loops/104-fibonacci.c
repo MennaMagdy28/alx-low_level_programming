@@ -27,6 +27,7 @@ int main(void)
 int count, initial;
 unsigned long a = 1, b = 2, c, mx = 100000000, flo = 0, flo2 = 0, sumo = 0;
 for (count = 1; count <= 98; count++)
+{
 if (flo > 0)
 printf("%lu", flo);
 initial = numlen(mx) - 1 - numlen(a);
@@ -46,5 +47,6 @@ if (count != 98)
 printf(", ");
 else
 printf("\n");
+}
 return (0);
 }
