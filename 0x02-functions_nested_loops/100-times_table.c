@@ -12,12 +12,13 @@ for (i = 0; i <= n; i++)
 {
 sum = 0;
 j = 0;
-do {
+while (j <= n)
+{
 printf("%d, ", sum);
 sum = sum + i;
 j++;
-} while (j <= n);
-printf("%d\n", i * n); 
+}
+printf("%d\n", i * n);
 }
 }
 }
