@@ -16,9 +16,8 @@ do {
 printf("%d, ", sum);
 sum = sum + i;
 j++;
-} while (j < n);
-printf("\n");
+} while (j <= n);
+printf("%d\n", i * n); 
 }
-printf("%d\n", i * n);
 }
 }
