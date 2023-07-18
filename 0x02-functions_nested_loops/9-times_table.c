@@ -11,7 +11,7 @@ _putchar('0');
 _putchar(' ');
 for(j = 0; j < 10; j++)
 {
-_putchar(i + '0');
+_putchar(i + j + '0');
 _putchar(',');
 _putchar(' ');
 }
