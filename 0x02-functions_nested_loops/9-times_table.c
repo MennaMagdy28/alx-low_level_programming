@@ -9,9 +9,9 @@ for (i = 0; i < 10 ; i++)
 {
 for(j = 0; j < 10; j++)
 {
-putchar(j + i + '0');
-putchar(',');
-putchar(' ');
+_putchar(j + i + '0');
+_putchar(',');
+_putchar(' ');
 }
-putchar('\n');
+_putchar('\n');
 }
