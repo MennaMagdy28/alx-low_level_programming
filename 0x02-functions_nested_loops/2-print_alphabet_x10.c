@@ -4,7 +4,8 @@
 */
 void print_alphabet(void)
 {
-char i, j;
+int j;
+char i;
 for (j = 0; j < 10; j++)
 {
 for (i = 97; i <= 122; i++)
