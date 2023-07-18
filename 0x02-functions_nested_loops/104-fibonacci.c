@@ -46,6 +46,5 @@ if (count != 98)
 printf(", ");
 else
 printf("\n");
-}
 return (0);
 }
