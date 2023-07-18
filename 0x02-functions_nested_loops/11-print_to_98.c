@@ -8,12 +8,12 @@ void print_to_98(int n)
 int i, digit;
 if (n > 98)
 {
-for (i = n; i > 98; count--)
-printf("%d, ", count);    
+for (i = n; i > 98; i--)
+printf("%d, ", i);    
 }
 else
 {
-for (i = n; i <= 98; count++)
-printf("%d, ",count);
+for (i = n; i <= 98; i++)
+printf("%d, ",i);
 }
 }
