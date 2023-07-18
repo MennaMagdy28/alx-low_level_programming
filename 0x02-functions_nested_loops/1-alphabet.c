@@ -3,11 +3,11 @@
 #inclue "main.h"
 /**
 *main - check the code
-*Description: print putchar
+*Description: alphabet
 *Return: Always 0 
 */
 int main(void)
 {
-printf("_putchar\n");
+print_alphabet();
 return (0);
 }
