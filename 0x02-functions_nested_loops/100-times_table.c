@@ -6,15 +6,19 @@
 void print_times_table(int n)
 {
 int i, sum, j;
-for (i = 0; i < n; i++)
+if (n >= 0 && n <= 15)
+{
+for (i = 0; i <= n; i++)
 {
 sum = 0;
- j = 0;
-do
+j = 0;
+do {
 printf("%d, ", sum);
 sum = sum + i;
-j++
-while(j < n)
+j++;
+} while (j < n);
+printf("\n");
+}
 printf("%d\n", i * n);
 }
 }
