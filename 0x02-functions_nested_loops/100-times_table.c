@@ -14,9 +14,24 @@ sum = 0;
 j = 0;
 while (j < n)
 {
+if (sum < 10)
+{
 printf("%d,   ", sum);
 sum = sum + i;
+j++;     
+}
+else if (sum >= 10 && sum < 100)
+{
+printf("%d,  ", sum);
+sum = sum + i;
 j++;
+}
+else
+{
+printf("%d, ", sum);
+sum = sum + i;
+j++;
+}
 }
 printf("%d\n", i * n);
 }
