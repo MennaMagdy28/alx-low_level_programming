@@ -9,9 +9,11 @@ if (n > 0)
 {
 while (n--)
 {
+while (n--)
 _putchar(' ');
+
 }
 _putchar('\\');
-}
 _putchar('\n');
+}
 }
