@@ -12,6 +12,7 @@ if (c == 50 || c == 52)
 continue;
 _putchar(c);
 c++;
-}
+if (c == 57)
 _putchar('\n');
+}
 }
