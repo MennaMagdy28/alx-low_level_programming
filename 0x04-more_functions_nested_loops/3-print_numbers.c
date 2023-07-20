@@ -9,6 +9,6 @@ c = 48;
 while (c >= 48 && c <= 57)
 {
 _putchar(c);
-_putchar('\n');
 }
+_putchar('\n');
 }
