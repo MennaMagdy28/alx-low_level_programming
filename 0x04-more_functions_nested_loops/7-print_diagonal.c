@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_line - print line
+*print_diagonal - print line
 *@n : lenght
 */
 void print_line(int n)
