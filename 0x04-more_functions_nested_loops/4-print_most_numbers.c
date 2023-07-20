@@ -8,7 +8,7 @@ int c;
 c = 48;
 while (c >= 48 && c <= 57)
 {
-if(c == 50 || c == 52)
+if (c == 50 || c == 52)
 continue;
 _putchar(c);
 }
