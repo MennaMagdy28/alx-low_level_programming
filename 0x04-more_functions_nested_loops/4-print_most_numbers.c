@@ -5,14 +5,11 @@
 void print_most_numbers(void)
 {
 int c;
-c = 48;
-while (c >= 48 && c <= 57)
+for (c = 48; c <= 57; c++)
 {
 if (c == 50 || c == 52)
 continue;
 _putchar(c);
-if (c == 57)
-_putchar('\n');
-c++;
 }
+_putchar('\n');
 }
