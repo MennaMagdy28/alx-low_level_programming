@@ -4,7 +4,7 @@
 * @a: pointer to a
 * @b: pointer to b
 */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	int c;
 
