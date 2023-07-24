@@ -5,11 +5,11 @@
 */
 void rev_string(char *s)
 {
-	int i = 0, j;
+	int i, j;
 	char tmp;
 
-	while (s[i])
-		i++;
+	for (i = 0; s[i] != '\0'; ++i)
+		;
 
 	for (j = 0; j < i / 2; i++)
 	{
