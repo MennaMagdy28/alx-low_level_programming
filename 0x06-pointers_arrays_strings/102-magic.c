@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ *main - start
+ * Description: magic
+ * Return: 0 Always (success)
+*/
 
 int main(void)
 {
