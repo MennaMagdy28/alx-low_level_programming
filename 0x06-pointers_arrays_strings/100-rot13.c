@@ -13,17 +13,17 @@ char *rot13(char *str)
 	char incode[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 
-	while (*s)
+	while (*str)
 	{
 		for (i = 0; i <= 52; i++)
 		{
-			if (*s == decode[i])
+			if (*str == decode[i])
 			{
-				*s = incode[i];
+				*str = incode[i];
 				break;
 			}
 		}
-		s++;
+		str++;
 	}
 	return (ptr);
 }
