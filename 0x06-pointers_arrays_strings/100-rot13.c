@@ -5,7 +5,7 @@
 * @str: string
 * Return: pointer to dest
 */
-char *rot13(char *str);
+char *rot13(char *str)
 {
 	char *ptr = str;
 	int i;
