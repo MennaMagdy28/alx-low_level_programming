@@ -16,8 +16,8 @@ int isLower(char c)
 int del(char c)
 {
 	int i;
-
 	char deli[] = " \t\n,.!?\"(){}";
+
 	for (i = 0; i < 12; i++)
 		if (c == deli[i])
 			return (1);
