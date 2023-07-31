@@ -1,6 +1,19 @@
 #include "main.h"
 /**
-* function -
-* @
-* Return:
+* _memcpy - memcpy effect
+* @dest: string
+* @src: copy from to dest
+* @n: size to copy
+* Return: pointer
 */
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
+}
