@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if (haystack[k] == needle[0])
 		{
-			for (m = 0; m < j && k + m  < i; m++)
+			for (m = 0; m < j && j + m  <= i + j; m++)
 			{
 				if (needle[m] != haystack[k + m])
 					break;
