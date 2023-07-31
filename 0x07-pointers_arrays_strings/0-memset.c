@@ -3,7 +3,7 @@
 * _memset - memset effect
 * @s: string
 * @b:2nd string
-* @size: 1st string size
+* @n: 1st string size
 * Return: pointer to s
 */
 
