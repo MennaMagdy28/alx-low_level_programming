@@ -1,7 +1,19 @@
 #include "main.h"
 /**
-* function - 
-* @
-* Return:
+* _memset - memset effect
+* @s: string
+* @b:2nd string
+* @size: 1st string size
+* Return: pointer to s
 */
 
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i <= n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
+}
