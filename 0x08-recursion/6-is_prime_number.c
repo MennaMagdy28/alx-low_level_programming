@@ -19,7 +19,7 @@ int prime(int n, int i)
 
 
 /**
- * _is_prime_number - check if prime
+ * is_prime_number - check if prime
  * @n: num
  * Return: 0 , 1
 */
