@@ -1,5 +1,7 @@
 #include "main.h"
 
+int last_index(char *s);
+
 /**
  * check - checker
  * @s:string
@@ -20,11 +22,11 @@ int check(char *s, int start, int end, int mod)
 
 
 /**
- * palindrome - palindrome
+ * is_palindrome - palindrome
  * @s: string
  * Return: 0 , 1
 */
-int palindrome(char *s)
+int is_palindrome(char *s)
 {
 	int end = last_index(s);
 
