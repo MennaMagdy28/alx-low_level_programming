@@ -24,7 +24,7 @@ int prime(int n, int i)
  * Return: 0 , 1
 */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 	return (prime(n, 2));
 }
