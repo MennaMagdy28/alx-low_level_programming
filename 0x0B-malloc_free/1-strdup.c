@@ -9,6 +9,8 @@ unsigned int len(char *str)
 {
 	unsigned int i = 0;
 
+	if(str == NULL)
+		return (0);
 	while (str[i] != '\0')
 		i++;
 	return (i);
