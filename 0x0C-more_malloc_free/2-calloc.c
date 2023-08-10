@@ -24,10 +24,12 @@ char *_memset(char *s, char c, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	char *ptr;
+
 	if (size == 0 || nmemb == 0)
 		return (NULL);
 
-	char *ptr = malloc(sizeof(int) * nmemb);
+	ptr = malloc(sizeof(int) * nmemb)
 
 	if (ptr == 0)
 		return (NULL);
