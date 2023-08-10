@@ -25,11 +25,10 @@ char *_memset(char *s, char c, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr = malloc(sizeof(int) * nmemb);
-	unsigned int total = nmemb * sizeof(int);
 
 	if (size == 0 || nmemb == 0 || ptr == 0)
 		return (NULL);
 
-	_memset(ptr, 0, total);
+	_memset(ptr, 0, sizeof(int) * nmemb);
 	return (ptr);
 }
