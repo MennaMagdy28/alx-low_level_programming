@@ -12,9 +12,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int temp = n ^ m;
 	int i = 0;
 
-	for (; i < 32; i++)
+	for (; temp > 0; temp = temp >> 1)
 	{
-		if ((temp & 1 << i))
+		if ((temp & 1))
 			cnt++;
 	}
 	return (cnt);
