@@ -47,7 +47,7 @@ unsigned int size = Slen(b) - 1, i, res = 0;
 
 for (i = 0; i < size + 1; i++, b++)
 {
-if(*b != '0' && *b != '1')
+if (*b != '0' && *b != '1')
 	return (0);
 else if (*b & 1)
 {
