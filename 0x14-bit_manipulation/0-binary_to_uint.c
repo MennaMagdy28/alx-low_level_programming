@@ -24,9 +24,9 @@ return (x);
  */
 unsigned int _pow(int num, int p)
 {
-	int res = 1;
+	int res = 1, i;
 
-	for (int i = 0; i < p; i++)
+	for (i = 0; i < p; i++)
 		res *= num;
 	return (res);
 }
@@ -38,9 +38,9 @@ unsigned int _pow(int num, int p)
 */
 unsigned int binary_to_uint(const char *b)
 {
-	int size = Slen(b) - 1, res = 0;
+	int size = Slen(b) - 1, res = 0, i;
 
-	for (int i = 0; i < size + 1; i++)
+	for (i = 0; i < size + 1; i++)
 	{
 		if (*b == '0')
 			b++;
