@@ -8,6 +8,7 @@
 unsigned int Slen(const char *s)
 {
 int x = 0;
+
 while (*s != '\0')
 {
 x++;
