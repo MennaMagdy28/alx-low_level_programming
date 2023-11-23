@@ -38,7 +38,7 @@ return (res);
 */
 unsigned int binary_to_uint(const char *b)
 {
-int size = Slen(b) - 1, res = 0, i;
+unsigned int size = Slen(b) - 1, i, res = 0;
 
 if (!b)
 	return (0);
