@@ -9,11 +9,9 @@ unsigned int Slen(const char *s)
 {
 int x = 0;
 
-<<<<<<< HEAD
-=======
 if (!s)
 return (0);
->>>>>>> 641ff1e (k)
+
 while (*s != '\0')
 {
 x++;
