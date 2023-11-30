@@ -19,17 +19,17 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		dprintf(STDERR_FILENO, USAGE), exit(97);
-	from = open(av[1], O_RDONLY);
+	from = open(argv[1], O_RDONLY);
 	if (from == -1)
-		dprintf(STDERR_FILENO, ERROR_READ, av[1]), exit(98);
-	to = open(av[2], O_RDONLY | O_CREAT | O_TRUNC, PERMISSION);
+		dprintf(STDERR_FILENO, ERROR_READ, argv[1]), exit(98);
+	to = open(argv[2], O_RDONLY | O_CREAT | O_TRUNC, PERMISSION);
 	if (to == -1)
-		dprintf(STDERR_FILENO, ERROR_WRITE, av[2]), exit(99);
-	while (val = read(from, buffer, 1024) > 0)
-		if (write(ro, buf, val) != val)
-			dprintf(STDERR_FILENO, ERROR_WRITE, av[2]), exit(99);
-	if (b == -1)
-		dprintf(STDERR_FILENO, ERROR_READ, av[1]), exit(98);
+		dprintf(STDERR_FILENO, ERROR_WRITE, argv[2]), exit(99);
+	while ((val = read(from, buffer, 1024)) > 0)
+		if (write(to, buffer, val) != val)
+			dprintf(STDERR_FILENO, ERROR_WRITE, argv[2]), exit(99);
+	if (val == -1)
+		dprintf(STDERR_FILENO, ERROR_READ, argv[1]), exit(98);
 	from = close(from);
 	to = close(to);
 	if (from)
