@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	from = open(argv[1], O_RDONLY);
 	if (from == -1)
 		dprintf(STDERR_FILENO, ERROR_READ, argv[1]), exit(98);
-	to = open(argv[2], O_RDONLY | O_CREAT | O_TRUNC, PERMISSION);
+	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSION);
 	if (to == -1)
 		dprintf(STDERR_FILENO, ERROR_WRITE, argv[2]), exit(99);
 	while ((val = read(from, buffer, 1024)) > 0)
