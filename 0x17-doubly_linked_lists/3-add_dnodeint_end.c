@@ -27,6 +27,5 @@ h = h->next;
 }
 node->prev = h;
 h->next = node;
-*head = node;
 return (node);
 }
