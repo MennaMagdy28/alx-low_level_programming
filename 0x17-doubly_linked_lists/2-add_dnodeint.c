@@ -20,7 +20,7 @@ node->prev = NULL;
 node->n = n;
 if (h != NULL)
 {
-while (h->prev == NULL)
+while (h->prev != NULL)
 {
 h = h->prev;
 }
