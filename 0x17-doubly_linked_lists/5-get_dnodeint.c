@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "lists.h"
 /**
 * get_dnodeint - get node at the index
