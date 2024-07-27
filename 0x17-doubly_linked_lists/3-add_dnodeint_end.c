@@ -27,5 +27,5 @@ h = h->next;
 }
 node->prev = h;
 h->next = node;
-return (node);
+return (h);
 }
