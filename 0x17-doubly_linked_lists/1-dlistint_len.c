@@ -6,19 +6,19 @@
 */
 size_t dlistint_len(dlistint_t *h)
 {
-    unsigned long cnt;
+unsigned long cnt;
 
-    cnt = 0;
-    if (h == NULL)
-    return (cnt);
-    while (h->prev != NULL)
-    {
-        h = h->prev;
-    }
-    while (h != NULL)
-    {
-        cnt++;
-        h = h->next;
-    }
-    return (cnt);
+cnt = 0;
+if (h == NULL)
+return (cnt);
+while (h->prev != NULL)
+{
+h = h->prev;
+}
+while (h != NULL)
+{
+cnt++;
+h = h->next;
+}
+return (cnt);
 }
