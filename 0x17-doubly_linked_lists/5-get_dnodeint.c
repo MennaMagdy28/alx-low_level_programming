@@ -11,9 +11,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 dlistint_t *h;
 
 h = *head;
-node = malloc(sizeof(dlistint_t));
-if (node == NULL)
-return (NULL);
 if (h != NULL)
 {
 while (h->prev != NULL)
