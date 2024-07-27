@@ -24,8 +24,10 @@ while (h->next != NULL)
 {
 h = h->next;
 }
-}
-node->prev = h;
 h->next = node;
-return (h);
+}
+else
+*head = node
+node->prev = h;
+return (node);
 }
