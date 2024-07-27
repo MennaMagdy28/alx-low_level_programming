@@ -2,7 +2,7 @@
 /*
 * dlistint_len - get length of the list
 * @h: pointer to the head
-* Return: length 
+* Return: length
 */
 size_t dlistint_len(dlistint_t *h)
 {
