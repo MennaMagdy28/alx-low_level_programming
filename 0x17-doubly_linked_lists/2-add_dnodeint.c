@@ -26,6 +26,7 @@ h = h->prev;
 }
 }
 node->next = h;
+if (h != NULL)
 h->prev = node;
 *head = node;
 return (node);
