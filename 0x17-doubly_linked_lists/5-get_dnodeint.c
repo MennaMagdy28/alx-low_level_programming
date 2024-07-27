@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* get_dnodeint - get node at the index
+* get_dnodeint_at_index - get node at the index
 *
 * @head: head of the list
 * @index: index the element
@@ -23,6 +23,7 @@ while (h != NULL)
 if (i == index)
 break;
 h = h->next;
+i++;
 }
 return (h);
 }
